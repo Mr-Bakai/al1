@@ -4,9 +4,9 @@ public class Main {
 
     public static void main(String[] args) {
 
-        int[] banknotes = {1, 3, 5, 10, 20, 50, 100, 200, 500, 1000, 2000, 5000};
-        int[] quantities = {10, 5, 5, 3, 2, 1, 2, 3, 3, 2, 0, 2};
-        int[] quantitiesCopy = {10, 5, 5, 3, 2, 1, 2, 3, 3, 2, 0, 2};
+        int[] banknotes = {1, 3, 5, 10, 20, 50, 100, 200, 500, 1000, 2000, 5000, 7000};
+        int[] quantities = {10, 5, 5, 3, 2, 1, 2, 3, 3, 2, 2, 2, 1};
+        int[] quantitiesCopy = {10, 5, 5, 3, 2, 1, 2, 3, 3, 2, 2, 2, 1};
 
         Scanner sc = new Scanner(System.in);
 
@@ -41,7 +41,6 @@ public class Main {
                         }
                     }
                 }
-
                 totalAvailable = totalAvailable - aboutToGive;
                 System.out.println("You got: " + aboutToGive);
                 System.out.println("Available: " + totalAvailable);
@@ -50,7 +49,6 @@ public class Main {
                     System.out.println("You are out of money");
                     break;
                 }
-
             } else {
                 System.out.println("You can get only " + totalAvailable);
             }
